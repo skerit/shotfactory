@@ -66,7 +66,7 @@ class Gui(windows.Gui):
         requested_minor = '0'
         while len(requested_minor) < len(registered_minor):
             requested_minor += '0'
-        requested = '%d.%d' % (major, requested_minor)
+        requested = '%s.%s' % (major, requested_minor)
         if registered != requested:
             print "This registry key overrides the browser version:"
             print r"HKEY_LOCAL_MACHINE\%s\IE" % key_name
